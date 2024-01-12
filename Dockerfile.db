@@ -1,0 +1,6 @@
+FROM mysql:8.2.0
+ENV MYSQL_ROOT_PASSWORD=root
+#ENV MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql-root
+WORKDIR /mysql_files
+COPY ./Dummy_Database.md /docker-entrypoint-initdb.d/Dummy_Database.sql
+EXPOSE 3306
