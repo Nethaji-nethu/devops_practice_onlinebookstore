@@ -4,8 +4,8 @@ To start deploying and using directly using docker-compose,
 2. cd into the base folder where all the Dockerfile.* files are present.
 3. run below commands
      #to BUILD an image out of this
-     3a. docker-compose -f Docker-compose.yml build
+     docker-compose -f Docker-compose.yml build
      #to spin up the app,db containers in the DETACHED mode/background
-     3b. docker-compose -f Docker-compose.yml up -d
+     docker-compose -f Docker-compose.yml up -d
 4. Once done, confirm the same via `docker ps` command that 2 containers are running (app and db) on ports 8080, 3306 respectively.
 5. then on the docker host, open http://localhost:8080/onlinebookstore/ in your browser
